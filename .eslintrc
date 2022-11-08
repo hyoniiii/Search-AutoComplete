@@ -20,7 +20,14 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "warn",
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function", "unnamedComponents": "arrow-function" }
+    ],
+
     "import/extensions": [
       "error",
       "ignorePackages",
